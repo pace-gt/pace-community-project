@@ -1,0 +1,7 @@
+whatis("Name : SPARC")
+whatis("Version : {{ version }}")
+whatis("Target : x86_64")
+whatis("Short description : SPARC is an open-source software package for the accurate, effcient, and scalable solution of the Kohn-Sham density functional theory (DFT) problem.")
+help([[SPARC is an open-source software package for the accurate, effcient, and scalable solution of the Kohn-Sham density functional theory (DFT) problem.]])
+setenv("SPARC_ROOT", "{{ root_path }}") 
+prepend_path("PATH", "{{ root_path }}/lib")
