@@ -8,4 +8,4 @@ Pace-community is a way for software developers to turn their GitHub repositorie
 4. **Tell pace-community how the module should behave.** In your newly created folder, create a file called `template.lua` and in it, type the lua commands that should be executed when someone loads your module, such as setting environment variables or prepending to `PATH`. This is also where you can add a description of your module. If you are unfamiliar with creating Lmod modules, look at the 3 examples included in this repository or at the [Lmod documentation](https://lmod.readthedocs.io/en/latest/). Use the string `{{ version }}` to refer to your module version and the string `{{ root_path }}` to refer to the path of your repository clone. Pace-community will replace these placeholders with the appropriate values whenever it creates a new version of your module.
 
 ## How does PACE check for new releases and turn them into new module versions?
-All pace has to do is run update_community_modules.py. This can be scheduled to be run nightly.
+All PACE has to do is run update_community_modules.py. This can be scheduled to be run periodically.
